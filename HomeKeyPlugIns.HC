@@ -155,27 +155,27 @@ Bool MyPutKey(I64 ch,I64 sc)
 	//Ins your own ALT-key plug-ins
       case '1':
 	if (sc&SCF_KEY_DESC)
-	  KeyDescSet("Dol /ã");
+	  KeyDescSet("Dol /Ã£");
 	else
-	  'ã';
+	  'Ã£';
 	return TRUE;
       case '2':
 	if (sc&SCF_KEY_DESC)
-	  KeyDescSet("Dol /é");
+	  KeyDescSet("Dol /Ã©");
 	else
-	  'é';
+	  'Ã©';
 	return TRUE;
       case '3':
 	if (sc&SCF_KEY_DESC)
-	  KeyDescSet("Dol /è");
+	  KeyDescSet("Dol /Ã¨");
 	else
-	  'è';
+	  'Ã¨';
 	return TRUE;
       case '4':
 	if (sc&SCF_KEY_DESC)
-	  KeyDescSet("Dol /ê");
+	  KeyDescSet("Dol /Ãª");
 	else
-	  'ê';
+	  'Ãª';
 	return TRUE;
       case '9':
 	if (sc&SCF_KEY_DESC)
@@ -200,3 +200,4 @@ Bool MyPutS(U8 *)
 }
 
 KeyDevAdd(&MyPutKey,&MyPutS,0x20000000,TRUE);
+
